@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.nav-cont {
+  height: 6vh;
+  width: 90vw;
+  margin-top: 15px;
+  background-color: rgb(43, 0, 96);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-heading {
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn-portion {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 6px;
+  background-color: rgb(76, 26, 137);
+  color: #fff;
+  border: none;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-btn:hover {
+  background-color: rgb(119, 66, 185);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-btn {
+  border: none;
+  background-color: orangered;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
 }
+
+.login-btn:hover {
+  background-color: rgb(255, 105, 50);
+}
+
+/******************************** Navbar Ends ********************************/
+
+/******************************** News Section Starts ********************************/
+
+.news-cont {
+  height: 60vh;
+  width: 90vw;
+  background-color: aqua;
+}
+
+/******************************** News Section Ends ********************************/
