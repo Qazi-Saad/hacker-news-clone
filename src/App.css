@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .nav-cont {
@@ -21,8 +22,8 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   padding-top: 15px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,13 +54,21 @@ body {
   cursor: pointer;
 }
 
+.nav-btn:focus {
+  outline: none;
+}
+
 .nav-btn:hover {
   background-color: rgb(119, 66, 185);
 }
 
+#active-btn {
+  background-color: rgb(255, 0, 0);
+}
+
 .login-btn {
   border: none;
-  background-color: orangered;
+  background-color: rgb(205, 10, 0);
   border-radius: 5px;
   padding: 5px;
   margin-bottom: 5px;
@@ -70,7 +79,7 @@ body {
 }
 
 .login-btn:hover {
-  background-color: rgb(255, 105, 50);
+  background-color: rgb(255, 64, 50);
 }
 
 /******************************** Navbar Ends ********************************/
@@ -80,7 +89,7 @@ body {
 .news-cont {
   height: 60vh;
   width: 90vw;
-  background-color: aqua;
+  background-color: rgb(250, 239, 225);
 }
 
 /******************************** News Section Ends ********************************/
